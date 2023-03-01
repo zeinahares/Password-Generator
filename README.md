@@ -6,6 +6,8 @@ I built this website to help anyone generate a password between 8-128 characters
 
 This project helped me learn a lot about functionsa and arrays in JS!
 
+Here's a link to try it out: https://zeinahares.github.io/Password-Generator/
+
 ## Installation
 
 N/A
