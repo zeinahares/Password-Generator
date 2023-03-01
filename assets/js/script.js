@@ -11,7 +11,7 @@ function generatePassword () {
   var lowerchars = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
   var upperchars = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
   var numbers = ["1","2","3","4","5","6","7","8","9","0"];
-  var specialchars = ["~"," ","!","@","#","$","%","^","&","*","(",")","-","_","=","+","[","]","{","}",";","'",":",".","/","<",">","?"];
+  var specialchars = ["~"," ","!","@","#","$","%","^","&","*","(",")","-","_","=","+","[","]","{","}",";","'",":",".","|",",","/","<",">","?"];
 
   var generate = confirm("Would you like to generate a password?");
 
@@ -36,7 +36,7 @@ function generatePassword () {
 
     // if none are selected, give error message and repeat until something is selected
     while (lowerCase === false && upperCase === false && numeric === false && special === false) {
-      alert("Error, you didn't select any character types. At least 1 character must be selected");
+      alert("Error, you didn't select any character types. At least 1 character must be selected.");
       lowerCase = confirm("Would you like lowercase characters?");
       upperCase = confirm("Would you like uppercase characters?");
       numeric = confirm("Would you like numeric characters?");
@@ -44,7 +44,7 @@ function generatePassword () {
     }
   }
 
-  // input characters array into new pass array
+  // input characters array into posspass array
   if (lowerCase) {
     posspass = posspass.concat(lowerchars);
   }
